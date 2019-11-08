@@ -8,6 +8,8 @@ package com.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 
 /**
  * @description 
@@ -15,7 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @date 2019年11月4日
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class })
 public class SpringbootWebApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootWebApplication.class, args);
