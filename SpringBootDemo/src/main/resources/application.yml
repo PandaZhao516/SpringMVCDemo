@@ -59,11 +59,10 @@ mybatis:
   type-aliases-package: com.demo.entity
 
 #mybaatis分页插件pagehelper设置
-pagehelper:
-  pagehelperDialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  #params: count=countSql
+pagehelper: 
+ pagehelperDialect: mysql
+ reasonable: true
+ support-methods-arguments: true
 
 
 

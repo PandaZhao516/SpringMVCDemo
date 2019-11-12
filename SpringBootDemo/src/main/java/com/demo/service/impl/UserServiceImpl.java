@@ -34,9 +34,6 @@ public class UserServiceImpl implements UserService{
 	public List<User> findAll() {
 		// TODO Auto-generated method stub
 		List<User> users =  userMapper.findAll();
-		for(User u:users){
-			
-		}
 		return users;
 	}
 
