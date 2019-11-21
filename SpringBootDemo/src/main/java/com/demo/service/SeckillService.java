@@ -6,6 +6,7 @@
  */
 package com.demo.service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import com.demo.dto.Exposer;
@@ -37,5 +38,5 @@ public interface SeckillService {
 	/**
 	 * 执行秒杀的操作
 	 */
-//	SeckillExection executeSeckill(long seckillId, BigDecimal money, long userPhone, String md5)throws SeckillException, RepeatKillException, SeckillCloseException;
+	SeckillExection executeSeckill(long seckillId, BigDecimal money, long userPhone, String md5)throws SeckillException, RepeatKillException, SeckillCloseException;
 }
