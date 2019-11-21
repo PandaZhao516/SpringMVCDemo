@@ -40,4 +40,132 @@ public class Seckill implements Serializable{
     private Date endTime; //秒杀结束时间
     
     private long stockCount; //剩余库存数量 
+
+	/**
+	 * @return the seckillId
+	 */
+	public long getSeckillId() {
+		return seckillId;
+	}
+
+	/**
+	 * @param seckillId the seckillId to set
+	 */
+	public void setSeckillId(long seckillId) {
+		this.seckillId = seckillId;
+	}
+
+	/**
+	 * @return the title
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * @param title the title to set
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	/**
+	 * @return the image
+	 */
+	public String getImage() {
+		return image;
+	}
+
+	/**
+	 * @param image the image to set
+	 */
+	public void setImage(String image) {
+		this.image = image;
+	}
+
+	/**
+	 * @return the price
+	 */
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	/**
+	 * @return the costPrice
+	 */
+	public BigDecimal getCostPrice() {
+		return costPrice;
+	}
+
+	/**
+	 * @param costPrice the costPrice to set
+	 */
+	public void setCostPrice(BigDecimal costPrice) {
+		this.costPrice = costPrice;
+	}
+
+	/**
+	 * @return the createTime
+	 */
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	/**
+	 * @param createTime the createTime to set
+	 */
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	/**
+	 * @return the startTime
+	 */
+	public Date getStartTime() {
+		return startTime;
+	}
+
+	/**
+	 * @param startTime the startTime to set
+	 */
+	public void setStartTime(Date startTime) {
+		this.startTime = startTime;
+	}
+
+	/**
+	 * @return the endTime
+	 */
+	public Date getEndTime() {
+		return endTime;
+	}
+
+	/**
+	 * @param endTime the endTime to set
+	 */
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
+
+	/**
+	 * @return the stockCount
+	 */
+	public long getStockCount() {
+		return stockCount;
+	}
+
+	/**
+	 * @param stockCount the stockCount to set
+	 */
+	public void setStockCount(long stockCount) {
+		this.stockCount = stockCount;
+	}
+    
+    
 }

@@ -12,7 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.entity.Seckill;
 import com.demo.entity.User;
+import com.demo.mapper.SeckillMapper;
 import com.demo.service.UserService;
 
 /**
@@ -24,12 +26,12 @@ import com.demo.service.UserService;
 @RestController
 public class UserController {
 	@Autowired
-	private UserService userService;
+	private SeckillMapper seckillMapper;
 	
 	@RequestMapping("/findAll")
-	public List<User> findAll(){
+	public List<Seckill> findAll(){
 	
-		List<User> users = userService.findAll();
-		return users;
+		List<Seckill> seckill = seckillMapper.findAll();
+		return seckill;
 	}
 }
